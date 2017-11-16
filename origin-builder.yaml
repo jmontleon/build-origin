@@ -37,7 +37,7 @@ objects:
     runPolicy: Serial
     source:
       git:
-        uri: https://github.com/csrwng/build-origin.git
+        uri: https://github.com/jmontleon/build-origin.git
       type: Git
     strategy:
       sourceStrategy:
@@ -75,7 +75,7 @@ objects:
       dockerfile: |-
         FROM origin-release
         EXPOSE 8000
-        LABEL io.openshift.s2i.scripts-url "https://raw.githubusercontent.com/csrwng/build-origin/master/.s2i/bin"
+        LABEL io.openshift.s2i.scripts-url "https://raw.githubusercontent.com/jmontleon/build-origin/master/.s2i/bin"
         RUN chown -R 1001 /go /tmp
         USER 1001
         ENV GIT_COMMITTER_NAME="Developer" GIT_COMMITTER_EMAIL="dev@example.com"
