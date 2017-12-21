@@ -85,7 +85,7 @@ objects:
       dockerStrategy:
         from:
           kind: ImageStreamTag
-          name: origin-release:golang-1.8
+          name: origin-release:golang-1.9
       type: Docker
     triggers:
     - type: ConfigChange
@@ -185,9 +185,9 @@ objects:
     tags:
     - from:
         kind: DockerImage
-        name: openshift/origin-release:golang-1.8
+        name: openshift/origin-release:golang-1.9
       importPolicy: {}
-      name: golang-1.8
+      name: golang-1.9
       referencePolicy:
         type: Source
 - apiVersion: v1
