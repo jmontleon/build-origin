@@ -85,7 +85,7 @@ objects:
       dockerStrategy:
         from:
           kind: ImageStreamTag
-          name: origin-release:golang-1.9
+          name: origin-release:golang-1.11
       type: Docker
     triggers:
     - type: ConfigChange
