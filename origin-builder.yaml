@@ -185,9 +185,9 @@ objects:
     tags:
     - from:
         kind: DockerImage
-        name: openshift/origin-release:golang-1.9
+        name: openshift/origin-release:golang-1.11
       importPolicy: {}
-      name: golang-1.9
+      name: golang-1.11
       referencePolicy:
         type: Source
 - apiVersion: v1
